@@ -15,6 +15,7 @@ body {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-left: 100px;
 }
 
 .controls {
@@ -64,3 +65,36 @@ body {
 .controls .controls__range {
     margin-bottom: 30px;
 }
+
+.canvas-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.status__box {
+  margin-left: 30px;
+  padding-bottom: 10px;
+}
+ 
+.color__preview {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #2d2d2d;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.line__status {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  background-color: white;
+}
+
