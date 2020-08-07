@@ -4,6 +4,8 @@ const colors = document.getElementsByClassName("jsColor");
 const range = document.getElementById("jsRange");
 const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
+const resetBtn = document.getElementById("jsReset");
+
 const color_status = document.getElementById("color__status");
 const line_canvas = document.getElementById("line__canvas");
 const line_ctx = line_canvas.getContext("2d");
@@ -119,6 +121,11 @@ function handleSaveClick(event) {
     link.click();
 }
 
+function handleResetClick(event) {
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
 if(canvas) {
     canvas.addEventListener("mousemove", onMouseMove);
     canvas.addEventListener("mousedown", startPainting);
@@ -146,4 +153,8 @@ if(mode) {
 
 if(saveBtn) {
     saveBtn.addEventListener("click", handleSaveClick);
+}
+
+if(resetBtn) {
+    resetBtn.addEventListener("click", handleResetClick);
 }

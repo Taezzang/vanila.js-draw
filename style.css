@@ -57,9 +57,17 @@ body {
 .controls__colors .controls__color {
   width: 50px;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 50%;
   cursor: pointer;
+  margin: 2px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all .4s;
+}
+
+.controls__color:hover {
+  width: 60px;
+  height: 60px;
+  transition: all .4s;
 }
 
 .controls .controls__range {
@@ -88,6 +96,7 @@ body {
   font-size: 25px;
   line-height: 100px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .line__status {
@@ -96,5 +105,6 @@ body {
   border: 1px solid #d2d2d2;
   border-radius: 10px;
   background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
