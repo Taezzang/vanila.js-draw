@@ -21,7 +21,7 @@ canvas.height = CANVAS_SIZE;
 line_canvas.width = LINE_SIZE;
 line_canvas.height = LINE_SIZE;
 line_ctx.strokeStyle = INITIAL_COLOR;
-line_ctx.lineWidth = 2.5; 
+line_ctx.lineWidth = 3.5; 
 line_ctx.fillStyle = "white";
 
 line_ctx.beginPath();
@@ -33,7 +33,7 @@ ctx.fillStyle = "white";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.strokeStyle = INITIAL_COLOR;
 ctx.fillStyle = INITIAL_COLOR;
-ctx.lineWidth = 2.5;
+ctx.lineWidth = 3.5;
 
 let painting = false;
 let filling = false;
